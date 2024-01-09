@@ -601,13 +601,13 @@ ul li::before {
     font-weight: 700;
 }
 .product-slider__image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
 }
 .product-detail__description-detail{
     font-size: 13px;
-    width: 383px;
+    width: 360px;
     padding: 16px;
     font-weight: 400;
     text-align: left;
