@@ -1,0 +1,568 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Apply a box-sizing border-box model globally */
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    box-shadow: 15px 3px 0px 0px #e7e7e7;
+}
+
+.navbar__left {
+    flex: 1;
+}
+
+.navbar__logo {
+    max-width: 100%;
+    height: auto;
+}
+.navbar__middle {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__profile {
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.navbar__profile-image {
+    border-radius: 50%;
+    margin-right: 8px;
+    max-width: 40px;
+    height:40px;
+    margin-left:12px;
+}
+
+.navbar__profile-name {
+    font-weight: bold;
+}
+/* Product detail styles */
+.product-detail {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.product-detail__image {
+    width: 800px;
+}
+
+.product-detail__img {
+    max-width: 100%;
+    height: auto;
+}
+.product-detail__description-detail{
+    padding: 70px 0px 0px 0px;
+    font-size:18px;
+    font-weight:400;
+    margin-left:82px;
+}
+
+.product-detail__info {
+    width: 500px;
+    margin-left:4rem;
+    height:120vh;
+    padding: 0 20px;
+}
+
+.product-detail__title {
+    font-size: 44px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.product-zipper__crumb{
+    color:#0747d3;
+}
+.product-detail__description {
+    margin-bottom: 20px;
+}
+
+.product-detail__price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-detail__printing-type {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.product-mute{
+    color: gray;
+}
+.product-detail__border{
+    border-bottom: 1px solid #000
+}
+.product-detail__crumb{
+    height:6vh;
+    margin-top:12px;
+    margin-bottom:2rem;
+}
+.product-detail__button {
+    background-color: #ff1783;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.product-detail__button:hover {
+    background-color: #ff1783;
+}
+
+.product-image{
+    width: 500px;
+    height: 500px;
+    border-radius:20px;
+}
+.product-display-container{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.top{
+    margin-top:4rem;
+}
+.product-slider__display{
+    padding:20px;
+    margin-bottom:50px;
+}
+.product-slider__title{
+    font-size:34px;
+    margin-top:5rem;
+    margin-bottom:2rem;
+    margin-left:6rem;
+    font-weight:700;
+}
+.product-slider__image{
+    width: 300px;
+    height: 300px;
+    border-radius:20px;
+}
+.product-slider__detail{
+    text-align:left;
+    margin-top:12px;
+}
+.product-slider__price{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.footer-content{
+    background-color:#eaeef1;
+}
+.container{
+    padding:63px;
+}
+.border{
+    border-top: 1px solid #ccc;
+}
+.footer-content-bottom{
+    background-color:#eaeef1;
+    padding:20px;
+}
+
+
+  .checkbox-wrapper-46
+   input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  .checkbox-wrapper-47
+   input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  .checkbox-wrapper-48
+   input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  .checkbox-wrapper-49
+   input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox-wrapper-46 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-46 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    background:black;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-46 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-46 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506EEC;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-46 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-46 .cbx:hover span:first-child {
+    border-color: #506EEC;
+  }
+
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child {
+    background: #000;
+    border-color: #000;
+    animation: wave-46 0.4s ease;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-46 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child {
+    background: #000;
+    border-color: #000;
+    animation: wave-46 0.4s ease;
+  }
+
+  @keyframes wave-46 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  .checkbox-wrapper-47 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-47 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-47 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    background:green;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-47 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-47 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: green;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-47 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-47 .cbx:hover span:first-child {
+    border-color: #506EEC;
+  }
+
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child {
+    background: green;
+    border-color: green;
+    animation: wave-47 0.4s ease;
+  }
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child {
+    background: green;
+    border-color: green;
+    animation: wave-47 0.4s ease;
+  }
+
+  @keyframes wave-47 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  .checkbox-wrapper-48 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-48 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-48 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    background:blue;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-48 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-48 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506EEC;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-48 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-48 .cbx:hover span:first-child {
+    border-color: #506EEC;
+  }
+
+  .checkbox-wrapper-48 .inp-cbx:checked + .cbx span:first-child {
+    background: blue;
+    border-color: blue;
+    animation: wave-48 0.4s ease;
+  }
+  .checkbox-wrapper-48 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-48 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .checkbox-wrapper-47 .inp-cbx:checked + .cbx span:first-child {
+    background: green;
+    border-color: green;
+    animation: wave-48 0.4s ease;
+  }
+
+  @keyframes wave-48 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  .checkbox-wrapper-49 .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-49 .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-49 .cbx span:first-child {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    background:red;
+    border: 1px solid #9098A9;
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-49 .cbx span:first-child svg {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-49 .cbx span:first-child:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #506EEC;
+    display: block;
+    transform: scale(0);
+    opacity: 1;
+    border-radius: 50%;
+  }
+  .checkbox-wrapper-49 .cbx span:last-child {
+    padding-left: 8px;
+  }
+  .checkbox-wrapper-49 .cbx:hover span:first-child {
+    border-color: #506EEC;
+  }
+
+  .checkbox-wrapper-49 .inp-cbx:checked + .cbx span:first-child {
+    background: red;
+    border-color: red;
+    animation: wave-49 0.4s ease;
+  }
+  .checkbox-wrapper-49 .inp-cbx:checked + .cbx span:first-child svg {
+    stroke-dashoffset: 0;
+  }
+  .checkbox-wrapper-49 .inp-cbx:checked + .cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+  .checkbox-wrapper-49 .inp-cbx:checked + .cbx span:first-child {
+    background: red;
+    border-color: red;
+    animation: wave-49 0.4s ease;
+  }
+
+  @keyframes wave-49 {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+
+.flex{
+    display: flex;
+    gap:0.7rem
+}
+.bold{
+    font-weight:bold
+}
+.offer-pink{
+    color:#ff1783
+}
+.product-detail__price-range{
+    font-size:30px;
+    margin-bottom:3rem;
+}
+.small{
+    font-size:14px;
+}
+
+ul {
+    list-style: none;
+  }
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #f09f90; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.3em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.coupon__style{
+    color: #f09f90;
+    font-size:25px;
+}
