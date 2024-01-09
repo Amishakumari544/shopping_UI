@@ -69,7 +69,7 @@ body, h1, h2, h3, p, ul, li {
 .product-detail {
     display: flex;
     align-items: center;
-    padding: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .product-detail__image {
@@ -90,7 +90,7 @@ body, h1, h2, h3, p, ul, li {
 .product-detail__info {
     width: 500px;
     margin-left:4rem;
-    height:120vh;
+    margin-top: -20rem;
     padding: 0 20px;
 }
 
@@ -119,7 +119,7 @@ body, h1, h2, h3, p, ul, li {
     color: gray;
 }
 .product-detail__border{
-    border-bottom: 1px solid #000
+    border-bottom: 1px solid #ccc
 }
 .product-detail__crumb{
     height:6vh;
