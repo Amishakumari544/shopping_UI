@@ -615,14 +615,27 @@ ul li::before {
     justify-content: center;
     margin-left: 1rem;
 }
-.product-detail__image {
-    width: 200px;
-}
+
 .product-display-container{
     display: flex;
     /* justify-content: space-around; */
     align-items: center;
     gap: 2rem;
     margin-top: 2rem;
+}
+.hoodie-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.product-detail__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.product-detail__crumb {
+    height: 2vh;
+    margin-top: 12px;
+    margin-bottom: 0rem;
 }
   }
