@@ -591,7 +591,7 @@ ul li::before {
 .product-image {
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 .product-slider__title {
     font-size: 28px;
@@ -607,13 +607,13 @@ ul li::before {
 }
 .product-detail__description-detail{
     font-size: 13px;
-    width: 283px;
-    padding: 26px;
+    width: 383px;
+    padding: 16px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: center;
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 
 .product-display-container{
@@ -638,4 +638,23 @@ ul li::before {
     margin-top: 12px;
     margin-bottom: 0rem;
 }
+.product-detail__price-range {
+    font-size: 23px;
+    margin-bottom: 1rem;
+}
+.mobile-btn{
+    border-radius:50px;
+}
   }
+  /* Add your existing styles here */
+
+.product-detail__hidden-content {
+    /* Set a maximum height for the hidden content */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.product-detail__hidden-content.hidden {
+    max-height: 0;
+}

@@ -14,6 +14,7 @@
     <nav class="navbar">
       <div class="navbar__left">
         <img src="https://swageazy.com/assets/images/landing-page/logo-black.png" alt="Logo" class="navbar__logo" />
+        <div class="lg:hidden"><i class="fa fa-bars"></i></div>
       </div>
       <div class="navbar__middle">
         <a href="#" class="navbar__link">Products</a>
@@ -37,17 +38,16 @@
         <div>
         <img src="https://images.bewakoof.com/t1080/women-s-maroon-oversized-hoodies-596530-1703686416-1.jpg" alt="Product Image" class="hoodie-img lg:w-full" />
     </div>
-        <p class="product-detail__description-detail text-left hidden lg:block">
-          Fashion is a young and bold fashion brand, which brings to you the
-          latest trends in men's fashion. We aspire to epitomize and bring the
-          right balance between style and comfort in our products. In today's
-          fast paced world, our endeavor is to innovate and differentiate our
-          product line to cater to the trend-setting generation. Keeping our
-          customer's happiness as our primary goal, we are ever striving to
-          launch unique styles and adding value to India's fashion conscious
-          wardrobes
-        </p>
-      </div>
+    <p class="product-detail__description-detail hidden text-left" id="productDescription">
+        Fashion is a young and bold fashion brand, which brings to you the
+        latest trends in men's fashion. We aspire to epitomize and bring the
+        right balance between style and comfort in our products.Our endeavor is to innovate and differentiate our
+        product line to cater to the trend-setting generation. Keeping our
+        customer's happiness as our primary goal, we are ever striving to
+        launch unique styles and adding value to India's fashion-conscious
+        wardrobes.
+    </p>
+    </div>
       <div class="product-detail__info">
         <p class="product-detail__crumb">
           <span class="product-mute">Products</span> > <span class="product-zipper__crumb">Classic zipper</span> 
@@ -135,7 +135,22 @@
             </p>
           </div>
         </div>
-        <button class="product-detail__button">Add to bag</button>
+        <p class="product-detail__description-detail lg:hidden text-left" id="productDescription">
+            Fashion is a young and bold fashion brand, which brings to you the
+            latest trends in men's fashion. We aspire to epitomize and bring the
+            right balance between style and comfort in our products.Our 
+            wardrobes.
+        </p>
+        <p class="product-detail__description-detail product-detail__hidden-content text-left hidden lg:block">
+            Our endeavor is to innovate and differentiate our
+            product line to cater to the trend-setting generation. Keeping our
+            customer's happiness as our primary goal, we are ever striving to
+            launch unique styles and adding value to India's fashion-conscious
+            wardrobes.
+        </p>
+        <button class="lg:hidden text-pink-500 underline p-4 mt-[-1rem]" onclick="toggleReadMore()">Read More</button>
+          
+        <button class="product-detail__button hidden lg:block">Add to bag</button>
       </div>
     </div>
     <div class="product-display-container top">
@@ -152,25 +167,27 @@
         <div class="hidden lg:block md:block">
           <img src="imgtwo.jpg" alt="" class="product-slider__image" />
           <div class="product-slider__detail ">
-            <p class="text-sm">Adidas polo neck blue t-shirt</p>
+            <p class="text-sm">Adidas track top</p>
             <p class="product-slider__price lg:text-lg text-sm">$56</p>
           </div>
         </div>
         <div class="hidden lg:block md:block"><img src="imgtwo.jpg" alt="" class="product-slider__image" />
             <div class="product-slider__detail">
-                <p class="text-sm">Adidas polo neck blue t-shirt</p>
+                <p class="text-sm">Bomber jacket 
+                    sleeveless</p>
                 <p class="product-slider__price lg:text-lg text-sm">$56</p>
               </div>
         </div>
         <div><img src="imgtwo.jpg" alt="" class="product-slider__image" />
             <div class="product-slider__detail">
-                <p>Adidas polo neck blue t-shirt</p>
+                <p>Adidas track top</p>
                 <p class="product-slider__price lg:text-lg text-sm">$56</p>
               </div>
         </div>
         <div><img src="imgtwo.jpg" alt="" class="product-slider__image" />
             <div class="product-slider__detail">
-                <p>Adidas polo neck blue t-shirt</p>
+                <p>Bomber jacket 
+                    </p>
                 <p class="product-slider__price lg:text-lg text-sm">$56</p>
               </div>
         </div>
@@ -178,22 +195,22 @@
     </div>
     <footer class="text-gray-600 body-font">
       <div
-        class="container footer-content lg:px-24 lg:py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+        class="container lg:flex lg:item-normal footer-content lg:px-24 lg:py-24 lg:mx-auto flex  lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
       >
         <div
-          class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
+          class="block lg:w-64 flex-shrink-0 md:mx-0 lg:mx-auto lg:text-center md:text-left"
         >
           <a
-            class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            class="block lg:flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
           >
           <img src="https://swageazy.com/assets/images/landing-page/logo-black.png" />  
           </a>
           
         </div>
         <div
-          class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
+          class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-left"
         >
-          <div class="lg:w-1/6 md:w-1/2 ">
+          <div class="lg:w-1/6 w-1/4 mr-32 lg:mr-1">
             <h2
               class="title-font font-medium text-gray-500 tracking-widest text-sm mb-3"
             >
@@ -214,7 +231,7 @@
               </li>
             </nav>
           </div>
-          <div class="lg:w-1/6 md:w-1/2">
+          <div class="lg:w-1/6 w-1/4">
             <h2
               class="title-font font-medium text-gray-500 tracking-widest text-sm mb-3"
             >
@@ -235,7 +252,7 @@
               </li>
             </nav>
           </div>
-          <div class="lg:w-1/6 md:w-1/2">
+          <div class="lg:w-1/6 w-1/4 mr-32 lg:mr-1">
             <h2
               class="title-font font-medium text-gray-500 tracking-widest text-sm mb-3"
             >
@@ -256,7 +273,7 @@
               </li>
             </nav>
           </div>
-          <div class="lg:w-1/6 md:w-1/2">
+          <div class="lg:w-1/6 w-1/4">
             <h2
               class="title-font font-medium text-gray-500 tracking-widest text-sm mb-3"
             >
@@ -317,7 +334,16 @@
           </span>
         </div>
       </div>
+      <div class="w-full bg-white flex mx-auto m-4 p-4 fixed bottom-[-16px] lg:hidden">
+          <button class="lg:hidden text-center bg-pink-500 text-white mobile-btn m-auto m-4 p-4 w-[300px]">Add to bag</button>
+      </div>
     </footer>
   </body>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleReadMore() {
+        var hiddenContent = document.querySelector(".product-detail__hidden-content");
+        hiddenContent.classList.toggle("hidden");
+    }
+</script>
 </html>
